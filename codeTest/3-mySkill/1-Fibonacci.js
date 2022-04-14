@@ -1,14 +1,15 @@
-function Fib(n) {
-    let a = 0;
-    let b = Number;
-    let c = Number;
-    
+function fibonacci(n) {
+  let newArr = [0, 1];
 
-    for(var i = 0; i <= n; i++) {
-        b = a + i
-        c = b + 
-        
+  let fib = (n) => {
+    if (newArr[n] !== undefined) {
+      return newArr[n];
     }
-};
+    newArr[n] = fib(n - 1) + fib(n - 2); 
+    return newArr[n];
+  };
 
-Fib();
+  return console.log(fib(n), newArr);
+}
+
+fibonacci(10);
