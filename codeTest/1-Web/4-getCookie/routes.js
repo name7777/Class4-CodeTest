@@ -9,10 +9,6 @@ router.post('/getCookie', (req, res) => {
     res.setHeader('Access-Control-Allow-Header', 'Content-type');
 });
 
-router.get('/천호옛길23', (req, res) => {
-  res.render('우리집 세탁기 이미지.jpg');
-});
-
 module.exports = router;
 
 /*
